@@ -1,0 +1,720 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "GeometrySandbox Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"Mac",
+				"Debug",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"Mac",
+				"Debug",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"GeometrySandbox Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"Mac",
+				"Debug",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"Mac",
+				"DebugGame",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"Mac",
+				"DebugGame",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"GeometrySandbox Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"Mac",
+				"DebugGame",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"Mac",
+				"Development",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"Mac",
+				"Development",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"GeometrySandbox Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"Mac",
+				"Development",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"Mac",
+				"Shipping",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"Mac",
+				"Shipping",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"GeometrySandbox Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"Mac",
+				"Shipping",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"Mac",
+				"Test",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"Mac",
+				"Test",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"GeometrySandbox Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"Mac",
+				"Test",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"IOS",
+				"Debug",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"IOS",
+				"Debug",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"GeometrySandbox IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"IOS",
+				"Debug",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"IOS",
+				"DebugGame",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"IOS",
+				"DebugGame",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"GeometrySandbox IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"IOS",
+				"DebugGame",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"IOS",
+				"Development",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"IOS",
+				"Development",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"GeometrySandbox IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"IOS",
+				"Development",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"IOS",
+				"Shipping",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"IOS",
+				"Shipping",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"GeometrySandbox IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"IOS",
+				"Shipping",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"IOS",
+				"Test",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"IOS",
+				"Test",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"GeometrySandbox IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandbox IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandbox",
+				"IOS",
+				"Test",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandboxEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandboxEditor",
+				"Mac",
+				"Debug",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandboxEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandboxEditor",
+				"Mac",
+				"Debug",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"GeometrySandboxEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandboxEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandboxEditor",
+				"Mac",
+				"Debug",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandboxEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandboxEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandboxEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandboxEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"GeometrySandboxEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandboxEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandboxEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandboxEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandboxEditor",
+				"Mac",
+				"Development",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandboxEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandboxEditor",
+				"Mac",
+				"Development",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"GeometrySandboxEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "GeometrySandboxEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"GeometrySandboxEditor",
+				"Mac",
+				"Development",
+				"/Users/wenslauv/Documents/Unreal Projects/Udemy/GeometrySandbox/GeometrySandbox.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		}
+	]
+}
